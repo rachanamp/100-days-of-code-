@@ -93,6 +93,8 @@ while len(guessed_state) < 50:
 
     if answer_state == "Exit":
         missing_states = []
+        #or 
+        #missing_states = [state for state in all_states if state not in guessed_state]
         for state in all_states:
             if state not in guessed_state:
                 missing_states.append(state)
